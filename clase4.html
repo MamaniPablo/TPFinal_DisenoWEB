@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de CSS externo</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <h1 id="titulo1"> Hola mundo </h1>
+    <p>Este es un párrafo de ejemplo.</p>
+    <p>Este es otro párrafo.</p>
+
+    <p class="red">Este es otro párrafo.</p>
+    <p class="red">Este es otro párrafo.</p>
+
+    <p class="green">Este es otro párrafo.</p>
+    <p class="green">Este es otro párrafo.</p>
+
+    <!-- Para aplicar 2 clases, se separan por un espacio. Ej class="green blue" -->
+    <img src="./images/river.jpg" class="bordeRedondeado imgChica" />
+
+    <ul>
+        <li>1 Taza de azucar</li>
+        <li>1/3 de aceite</li>
+        <li>1lt de agua</li>
+    </ul>
+
+<!-- BOX MODEL
+Describe como se representan los elementos html en una pagina. Es una caja la cual se divide en:
+contenido: eterminan el area del bloque. Propiedades: width y height
+padding: son los margenes del bloque (en word, los margenes de hoja). Propiedades: padding
+border: es el borde del box. Propiedades: border
+margen: es el margen entre el mundo externo y el border. Propiedades: margin
+
+El orden de afuera hacia adentro es:
+margen -> border -> padding -> contenido
+
+
+Unidades de medidas
+
+Absolutas:
+    pixels: unidad que utilizan las pantallas
+Relativas
+    REM:
+    Porcentaje: se tiene como referencia al tamaño de la caja (es 100%)
+    Viewpoint: e la relacion con respecto a la parte visible de la ventana del browser. Se utiliza para adaptar el site al dispositivo.
+-->
+
+    
+    <div class="contenedor">
+
+        <div class="tarjeta">
+            <h2>Nombre</h2>
+            
+        </div>
+        <div class="tarjeta2" id="cajita">
+            <h2>Nombre</h2>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

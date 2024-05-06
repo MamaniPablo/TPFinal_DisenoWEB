@@ -1,0 +1,31 @@
+*{
+    box-sizing: content-box;
+}
+.contenedor{
+    display: flex;
+    background-color: brown;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+}
+
+.tarjeta{
+    width: 30%;
+    height: 80%;
+    background-color: rgb(19, 180, 75);
+    border: 5px solid white;
+    border-radius: 15px;
+    padding: 15px;
+    margin: auto;
+}
+
+
+.tarjeta2{
+    width: 350px;
+    height: 250px;
+    background-color: rgb(19, 180, 75);
+    border: 5px solid white;
+    border-radius: 15px;
+    padding: 15px;
+    margin: auto;
+}

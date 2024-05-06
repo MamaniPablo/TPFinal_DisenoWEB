@@ -1,0 +1,490 @@
+<!--  CLASE 2  -->
+
+
+
+<!-- Etiquetas
+    Las etiquestas tienen open y close. Ejemplo:
+    <etiqueta>
+        CONTENIDO
+    </etiqueta>
+
+    Se puede agregar ATRIBUTOS como color, fuente, relleno, etc. Ejemplo
+
+    <etiqueta atributo = "valor">
+        CONTENIDO
+    </etiqueta>
+
+    <img src="path" alt="Imagen de ejemplo" width="200" heigh="200"
+    Del ejemplo anterior, esta la etiqueta:
+        img: que no tiene cierre
+        src: nombre de la imagen fuente 
+        alt: nombre alternnativo
+        width: ancho de la imagen
+        heigth: peso de la imagen
+    
+    Subetiquetas: se puede crear subetiquetas, pero se debe respetar el orden de cierre. Ejemplo:
+        <etq1>
+            <etq2>
+                CONTENIDO
+            </etq2>
+        </etq1>
+    Si pretendemos cerrar etq1 antes que etq2, tendremos un error.
+    
+    Etiquetas abiertas: no es necesario el cierre de las mismas
+        <img src="">
+        <br> 
+        <hr> : linea horizontal
+        <meta> : meta tags
+    
+    DOC TYPE
+    Mandatorio: indica el tipo de documento a utilizar
+    <!DOCTYPE html>
+    
+    Estructura basica
+    Las siguientes etiquetas son madatorias y definen el cuerpo del doc. Debene star en todo html creado
+    
+    FAVICON
+    Para agregar un icono que se muestra en el browser
+        <link rel="shortcut icon" href="./images/favicon.png"
+        href: como el aix, se indica el path. Si esta dentro del path origen, se pone ./
+
+    Etiquetas de texto
+    <h1> Encabezado 1 </h1>
+    <h2> Encabezado 1 </h2>
+    <h3> Encabezado 1 </h3>
+    <h4> Encabezado 1 </h4>
+    <h5> Encabezado 1 </h5>
+    <h6> Encabezado 1 </h6>
+    Las buenas practicas indican que debe haber un solo h1
+
+
+    
+    <!DOCTYPE html> --UNICO--
+
+    <html> --INICIO--
+        <head> --INFO DEL SITIO--
+
+            <meta <frase> > --METADATA DEL SITIO. EJEMPLO: UNICODE, LANGUAGE, ETC. -- 
+            <title> [INFO_DEL_SITE] </title> --Titulo de la pagina. Es lo que aparece en la barra de titulo del browser. Es utilizado por google. --
+        </head>
+    <body> 
+        --CUERPO DEL SITE--
+    </body>  
+
+    lorem50 + enter : te  genera un texto aleatorio de 50 palabras. Ejemplo
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur maiores aut dolorem recusandae optio explicabo quod deleniti, a, quibusdam unde et nisi perferendis fugiat? Debitis fugiat neque officiis nemo ullam, quo, rem, vero tenetur deleniti dolorem animi numquam ratione amet odio eveniet repudiandae pariatur porro incidunt nam cupiditate totam itaque?
+
+    </html>
+     -->
+
+     <!--
+        Semantica:
+
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Libro en HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Portada del Libro</h1>
+    </header>
+    
+    <nav>
+        <p><strong>Índice:</strong> Capítulo 1 | Capítulo 2 | Capítulo 3</p>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Capítulo 1: Introducción</h2>
+            <article>
+                <h3>Sección 1</h3>
+                <p>Contenido de la sección 1...</p>
+            </article>
+            <article>
+                <h3>Sección 2</h3>
+                <p>Contenido de la sección 2...</p>
+            </article>
+        </section>
+        
+        <aside>
+            <h3>Notas al Margen</h3>
+            <p>Notas y comentarios adicionales...</p>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Mi Libro. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+     -->
+
+<!--
+    CONTENEDORES
+
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo con Divs y Spans</title>
+</head>
+<body>
+    
+    El div ocupa el ancho de la linea. Tiene un salto de linea
+    El span va uno al lado del otro. No contiene el salto de linea
+
+    <div> Un elemento de bloque </div> <div> Otro elemento de bloque </div>
+    <div> Un último elemento de bloque</div>
+    <br>
+
+    <hr>
+<br>
+<br>
+    <span> Unas palabras </span>  
+    <span> Otras palabras </span>
+    <span> Más palabras por aquí </span>
+
+</body>
+</html>
+
+-->
+
+
+ <!-- CLASE 3 -->
+
+<!--
+Enlances o hipervinculos
+Existen dos tipos:
+1.- Absolutos: enlaces a link externos al site que estamos creando
+<a href="https://www.google.com.ar"> Vamos a Google <!a>
+
+2.- Internos: anclas que enlazan a etiquetas dentro de la misma pagina.
+<a href="#pie"> Ir al pie de pagina </a> : desde donde lo llamas
+
+<footer id="pie"> Fin de la pagina </footer> : Ancla o destino del #pie
+
+3.- Relativos: link a paginas dentro del mismo site
+
+
+MULTIMEDIA
+
+    IMAGENES
+
+    <img src="./images/river.jpg" alt="ImagenWeb" width="200" height="200">
+    src: indica el origen de la imagen
+    alt: si no encuentra la imagen del src. pone este texto. Debe ser descriptivo de la imagen que se quiere poner
+    widht/height: alto y ancho de la imagen
+
+    
+    VIDEOS
+
+    <video width="200" height="100" controls> 
+        <source src="path" type="video/mp4">
+            Tu navegador no soporte elementos de video
+    </video>
+
+    controls: indica que el video tendra los controles de play, stop, etc. Sin este atributo, el video no se reprooduce de ninguna manera
+    "Tu navegador no soporte elementos de video" : En caso que el browser no pueda reproducir el video, mostrara este txt alternativoo.
+
+    <audio controls src="path">
+        Tu navegador no soporte elementos de video
+    </audio>
+
+    LISTAS
+    Si queremos hacer una torta:
+
+    <ol>: listas ordenadas - Serian los pasos a seguir
+    <ul>: listas desordenadas - Serian los ingredientes a usar
+    <dl>: listas definidas - Serian las definiciones de los ingredientes (glosarios)
+    
+    Ordenadas: no hace falta definir el numero de posicion, al ser ordenada, se imprime con el orden segun se define
+    Se puede usar el atributo TYPE que indica el formato de numeracion el cual puede ser:
+        "A": letras mayusculas
+        "a": letras minusculas
+        "I": numeracion romana en mayuscula
+        "i": numeracion romana en minuscula
+
+    <ol type="I">
+        <li> Paso I </li>
+        <li> Paso II </li>
+        <li> Paso II </li>
+    </ol>
+
+    Desordenas:
+    Se imprimen tal cual se genera la lista. Se puede agregar viñetas
+    Type:
+        type="circle" : circunferencia
+        tupe="square" : cuadrado relleno
+        disc: por defecto. circulo relleno
+
+    <ul type="square">
+        <li> Parte I </li>
+        <li> Parte II </li>
+        <li> Parte II </li>
+    </ul>
+
+    Definidas: 
+    Se trata de orden un lsitado con niveles. Por ejemplo
+    ITEM1
+        Se refiere a una cosa
+    ITEM2
+        Se refiere a lo mismo
+        Tambien refiere a otra cosa
+    
+    
+    ***UNA FORMA RAPIDA DE CREAR LISTAS.***
+        ul>li*
+    Crea una lista ul con 4 items    
+
+    FORMULARIOS
+    Segmento para intruducion datos, por ejemplo, el login de una pagina que pide usuario, niombre, apellido, etc.
+
+    <form action="accion" method="metodo" enctype="tipo">
+        campos del formulario
+    </form>
+
+    action: se indica que doc (html, php) recibe los datos
+    metodo: la forma de enviar los datos. Son dos: GET y POST.
+        GET: 
+        POST: envia datos de forma NO visible
+    tipo: se indica el formato de dato que se utiliza para enviar loos datos.
+
+    BOTONES DE FORMULARIOS
+    TIPO radio
+    El siguientyeejemplo imprime circulos de los cuales solo uno es elegible dentro del formulario.
+    <form>
+        <input type="radio" name="turno" value="diurno"> Turno diurno
+        <br>
+        <input type="radio" name="turno" value="nocturno"> Turno nocturno
+    </form> 
+
+    TIPO submit/reset/buttoom
+        <form>
+            <input type="submit" value="Submitir" checked/>
+            <input type="reset" value="Limpiar"/>
+            <input type="buttom" value="Sin accione"/>
+        </form> 
+    el valor checked es para tenes seleccionada la opcion por default
+
+    El siguiente ejemplo muestra El nombre del campo y el campo a completar, por separado.
+    <form>
+        <label for="apellido"> Apellido:</label>
+        <input type="text" name="apellido" >
+    </form>
+
+
+    El siguiente ejemplo es una lista detallada. 
+        En el label. se indica que se mostrara una lista de talles con name=talle
+        Luego se detalla cada valor con el nombre porpio. 
+        El valor L/M/S es el dato que se envia al doc que procesara la info (parametro que viaja)
+    <label for="talle">Selecciona tu talle:</label>
+    <select name="talle">
+        <option value="L">Large</option>
+        <option value="M">Medium</option>
+        <option value="S">Small</option>
+    </select>
+
+    FIELD SET
+    Se utiliza para agrupar de forma visual, un formulario. Es decir, se agrupa en un recuadro, aquellos campos definidos en el fieldset
+
+    <form>
+    <fieldset>
+      <legend>Dirección</legend>
+      <label for="calle">Calle:</label>
+      <input type="text" id="calle" name="calle"><br>
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" id="ciudad" name="ciudad"><br>
+      <label for="codigo-postal">Código Postal:</label>
+      <input type="text" id="codigo-postal" name="codigo-postal"><br>
+    </fieldset>
+    </form> 
+
+    -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <title>Pablo Mamani - Index</title>
+</head>
+<body>
+    
+    <!-- Enlace interno -->
+    <a href="#pie"> Ir al pie de pagina</a>
+    <br>
+    <a href="carrito.html">Ir al cacrrito</a>
+    <hr>
+
+    <!-- Multimedia - Imagen -->
+    <img src="./images/river.jpg" alt="ImagenEscudoRiver" width="200" height="300">
+    <br>
+    <br>
+ 
+    <!-- FOORMULARIOS -->
+
+    <form>
+        <input type="text" name="usuario" placeholder="Usuario">
+        <br>
+        <input type="password" name="clave" placeholder="Contraseña">
+        <br>
+        <input type="email" name="email" placeholder="Email">
+        <br>
+        <input type="number" name="edad" placeholder="Edad">
+
+        <input type="submit" value="Submitir"/>
+        <input type="reset" value="Limpiar"/>
+        <input type="button" value="Sin acciones"/>
+
+    </form> 
+    
+    <form>
+        <input type="radio" name="turno" value="diurno"> Turno diurno
+        <br>
+        <input type="radio" name="turno" value="nocturno"> Turno nocturno
+    </form> 
+    
+    <br>
+    <br>
+
+    <form>
+        <label for="apellido"> Apellido:</label>
+        <input type="text" name="apellido" >
+    </form>
+
+    <br>
+    <br>
+
+    <label for="talle">Selecciona tu talle:</label>
+
+    <select name="talle">
+        <option value="L">Large</option>
+        <option value="M">Medium</option>
+        <option value="S">Small</option>
+    </select>
+
+    <br>
+    <br>
+
+    <form>
+        <fieldset>
+          <legend>Dirección</legend>
+          <label for="calle">Calle:</label>
+          <input type="text" id="calle" name="calle"><br>
+          <label for="ciudad">Ciudad:</label>
+          <input type="text" id="ciudad" name="ciudad"><br>
+          <label for="codigo-postal">Código Postal:</label>
+          <input type="text" id="codigo-postal" name="codigo-postal"><br>
+        </fieldset>
+    </form> 
+
+    <br>
+    <br>
+    
+    <!-- Multimedia - Video -->
+    <video width="400" height="700" controls> 
+        <source src="./media/lc_DR.mp4" type="video/mp4">
+            Tu navegador no soporte elementos de video
+    </video>
+
+    <br>
+    <br>
+    <!-- Multimedia - Audio -->
+    <audio controls src="./media/María Elena Walsh - La Vaca Estudiosa.mp3">
+        Tu navegador no soporte elementos de video
+    </audio>
+
+    <br>
+    <br>
+
+    <!-- Lista ORDENADA-->
+    <ol type="a">
+        <li> Paso I </li>
+        <li> Paso II </li>
+        <li> Paso II </li>
+    </ol>
+
+    <hr>
+
+    <!-- Lista DESORDENADA-->
+    <ul type="square">
+        <li> Parte I </li>
+        <li> Parte II </li>
+        <li> Parte II </li>
+    </ul>
+
+    <br>
+
+    <h2>
+        <ol>
+            <dt>HTML</dt>
+                <dd>Lenguaje de hipertexto</dd>
+            <dt>GOOGLE</dt>
+                <dd>Buscador mas popular</dd>
+            <dt>RIVER</dt>
+                <dd>Le gano a boca en 2018</dd>
+            <dt>MARVIN</dt>
+                <dd>El amigo eterno que extraño</dd>
+        </ol>
+    </h2>
+
+    <br>
+    
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quis, nisi quisquam deserunt voluptates, facere dolorem veritatis consequuntur vel odio quas eum est unde sit accusantium dolorum nostrum ad? Animi unde ab ipsa vel aliquam modi eius accusantium, asperiores aut. Dolore molestias blanditiis enim voluptate tenetur aspernatur obcaecati unde quas?
+    </p>
+    <br>
+    <br>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae cumque laudantium ipsam impedit tempore officiis a, minus blanditiis nemo ea aliquam perspiciatis saepe itaque veritatis architecto ratione omnis officia dicta nam voluptas error consectetur perferendis. Ex illum accusantium atque quos nemo officiis qui error numquam consequuntur natus aut recusandae ut, eaque quam aliquam magnam placeat sapiente? Aperiam tenetur maiores molestias quia exercitationem fugiat cupiditate laboriosam minus maxime cumque nesciunt alias dicta pariatur, est molestiae aut. Cum quae, dicta eligendi tenetur, eos minus et ducimus nihil error quod impedit laudantium. In ut libero perspiciatis, voluptatem corporis harum voluptate, sint rem sunt iusto odio, enim rerum accusamus possimus quae? Officia ratione placeat illum, quod dicta magni eveniet dolores unde explicabo enim velit ut tenetur itaque repudiandae nobis numquam pariatur qui aperiam harum! Officia repellendus ipsa sequi exercitationem amet doloribus ducimus, quasi labore autem ratione harum tenetur eius nulla facere, corporis rerum, commodi est. Officiis, fugiat vero numquam soluta qui totam nisi repellendus sed et reprehenderit porro dolores provident doloremque molestias cum? Nulla adipisci soluta ab similique at, iste est asperiores ipsum officiis delectus laboriosam doloribus? Provident deleniti animi repellendus a, explicabo nisi inventore aliquid voluptatum, eos dolor consequuntur expedita? Alias temporibus placeat ullam praesentium aut maiores accusantium voluptatem id atque consequuntur quibusdam aspernatur pariatur distinctio tempora recusandae, eveniet quis. Odit distinctio optio velit fugiat, nobis rem possimus cumque harum! Earum, asperiores? Magni dolore molestiae aperiam sed debitis nemo quidem rem provident non, unde perferendis voluptatibus atque commodi autem ut doloribus temporibus, nostrum magnam optio error tempore, deleniti eos. Ullam facere nobis velit, architecto delectus aperiam aut dolores voluptatum iste quam repellendus et ipsam minima porro temporibus assumenda voluptate ad neque, excepturi aliquam ipsa. Dolorem, harum exercitationem nisi impedit commodi delectus, deleniti esse placeat optio fugit non repellat modi alias molestiae animi tempora facilis. Veniam ratione quod, animi odio a tenetur voluptatum ipsum consequuntur eos optio quisquam, aliquid, numquam cumque saepe esse omnis illo corrupti non est neque praesentium vero rerum. Consequuntur rerum consequatur incidunt, odio ex obcaecati quibusdam? Labore, similique. Ex qui dolor officia consequatur maiores. Quam ducimus sit ut impedit officiis numquam voluptas non voluptates, harum soluta saepe recusandae culpa provident perferendis beatae nihil rem, voluptatum consequuntur error distinctio fuga? Nam, placeat quisquam! Reprehenderit delectus, repudiandae hic rem pariatur perferendis omnis eligendi asperiores optio consequuntur harum eos provident neque veniam saepe quaerat repellendus ipsum tenetur ipsam ab quidem voluptate dicta vitae! Saepe unde nihil voluptas? Repellendus officia ullam ea quo reiciendis necessitatibus minima molestiae exercitationem facilis dolore aliquid eum ipsum sint dolorum quasi quisquam doloremque recusandae eos odio aut expedita debitis adipisci, dolores fugit. Incidunt reprehenderit consequuntur maxime, velit quae consequatur repudiandae esse. Fugiat, quod. Sed incidunt illum error non unde quis quia, iste adipisci possimus nobis natus, reprehenderit libero doloribus illo quam recusandae, voluptas cupiditate! Assumenda in corrupti voluptates. Corrupti, consequuntur. Voluptates necessitatibus omnis eos cum odio fuga dolores debitis architecto commodi, corrupti blanditiis harum, quia aut. Tempore eos nobis possimus labore, expedita beatae quidem distinctio quibusdam. Quasi, pariatur aliquam!
+    </p>
+    <br>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, velit. Accusantium recusandae deserunt fugit vel rem maxime alias, quae repellendus aliquam quis perspiciatis laborum quia! Magni, animi! Laboriosam, numquam recusandae omnis ex dolor aut est deserunt doloribus error, rerum temporibus officia blanditiis. Deserunt dolorem harum modi tempore sequi. Expedita, culpa sint aliquid accusantium est accusamus fugiat, pariatur ratione numquam exercitationem neque cupiditate tempore. Est unde voluptates quibusdam vitae vero maxime, eveniet rem eius dignissimos voluptas. Eaque illo hic laudantium, numquam vitae illum similique fugiat veniam distinctio, voluptatibus nisi dolorum natus nulla aperiam repellat magni culpa voluptas esse ex neque eligendi? Sint facere fugit quibusdam aperiam eius dolore cupiditate repellendus excepturi. Inventore velit quibusdam sit dolorum fuga veniam corporis provident? Repellat amet natus nulla quia quis aliquid autem, sunt commodi inventore atque, porro nisi in vitae nesciunt deserunt modi provident eos! Quas saepe dolores corporis veniam esse commodi excepturi aliquid enim. Sit facilis placeat neque? Dignissimos porro ratione temporibus sapiente quod consequatur vitae optio placeat voluptas, facere totam minima ipsam blanditiis doloribus. Dolores eaque at consequuntur possimus a, ducimus facere, iste nihil ullam est soluta, aperiam deleniti inventore dicta blanditiis earum voluptatibus ad! Dignissimos laboriosam ut libero, modi ipsa odit similique natus praesentium rem quaerat esse laudantium totam voluptatibus voluptates quae. Iste, corporis obcaecati saepe sed minima, delectus ut accusantium quaerat iusto ratione dolores rem! Eos dolores amet ipsum mollitia, nam molestias minima deleniti labore non animi id pariatur consequatur laborum reprehenderit quam tenetur ut libero harum! Voluptas maiores sapiente asperiores at dicta, cumque doloremque aperiam cupiditate ipsam laudantium repellat a perferendis nesciunt, ex dolore atque adipisci culpa voluptatem ullam? Cumque ducimus illo repellendus culpa blanditiis. Provident error, nam natus iusto, rem excepturi officiis et quia inventore unde quidem repudiandae culpa earum aperiam at corrupti cumque adipisci deserunt atque illum consectetur tenetur. Asperiores accusamus ducimus repellat similique? Neque consequatur debitis modi placeat voluptatem facere quia et quae ullam non molestias adipisci, atque nesciunt blanditiis hic enim omnis. Vero, quaerat odio culpa ipsum consequatur, ut dolorum repellat accusamus consectetur nesciunt sed libero delectus dicta, assumenda doloremque laboriosam fugit molestiae. Sunt nihil officia fugit, laborum debitis temporibus at atque eligendi accusamus quod delectus ullam cumque quam velit, nam hic. Perferendis veritatis, quo sed dolorum quidem doloremque perspiciatis et quaerat molestiae quos ullam eveniet, veniam sapiente enim cupiditate id repudiandae reprehenderit fuga placeat vel eos? Voluptatem voluptate eos, corrupti tenetur sit repellat incidunt. Deleniti, ullam culpa? Voluptates sint repudiandae eligendi dolore necessitatibus error soluta explicabo adipisci in. Suscipit quo, iusto nesciunt omnis minima laudantium dolores exercitationem numquam distinctio ut corporis, soluta laboriosam eos? Itaque nobis aliquid soluta, omnis nostrum alias dolore magnam atque facilis corporis ratione delectus libero perspiciatis? Ullam culpa nostrum ipsa deleniti minima reprehenderit dolores ipsum ipsam aspernatur repellendus exercitationem quo excepturi fugit est dignissimos ratione recusandae, suscipit consectetur quos sint tenetur vitae! Velit nihil perspiciatis est atque minima temporibus molestias natus fuga aut iure nostrum, ab omnis consequuntur. Atque itaque quae hic eos quisquam esse adipisci sapiente delectus, ea magnam impedit.
+    </p>
+    <br>
+    <hr>
+    <br>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem modi eius quaerat qui voluptatibus adipisci voluptate cum voluptatem est! Ipsam laborum, nostrum placeat nobis inventore consequatur accusamus iure non? Laboriosam beatae numquam temporibus sit libero quaerat! Iste hic rerum porro, esse nisi accusamus. Omnis, totam veritatis autem quas ipsa, molestiae facilis reprehenderit magnam praesentium voluptates eaque ullam quam laborum est explicabo quidem, fugit ratione corporis laboriosam. Sint, ex fugiat nobis eveniet nihil non, earum quo cupiditate natus reiciendis quibusdam velit dolorem ea, tenetur tempore. Facere, sapiente officia. Incidunt neque mollitia recusandae modi cum praesentium suscipit quis illo. Nostrum libero dicta maiores eos. Inventore, vero a molestias unde nobis quasi ducimus perspiciatis dicta repudiandae dignissimos consectetur voluptate sunt minima, quam repellat vel atque omnis doloribus ratione! Ipsum commodi nesciunt minima architecto, ullam maiores eaque illo dignissimos quibusdam excepturi possimus impedit reprehenderit molestiae? Alias qui, deserunt quisquam sequi ratione neque. Reiciendis pariatur assumenda quos unde voluptatibus optio illo eveniet praesentium reprehenderit! Ut aliquid ratione rerum fugit, numquam odit inventore labore suscipit enim provident, at impedit eligendi voluptatum soluta excepturi non a repellendus magni aspernatur sequi. Laborum laudantium, beatae eius pariatur earum incidunt. Voluptas voluptates voluptatibus praesentium provident vitae est ipsum rerum quidem, sint repellendus odio blanditiis iure, esse, porro fuga. Vitae cum, eius temporibus ea voluptate culpa doloremque enim voluptatem velit. Perferendis quis cum rerum sint nemo veritatis deleniti autem velit incidunt aliquid. Perferendis voluptatibus beatae fuga distinctio rerum repudiandae vel sapiente porro rem aliquam provident quidem magnam non, officia inventore ex exercitationem placeat dolor! Nobis libero ullam perspiciatis sint, voluptates culpa officiis corporis quisquam dignissimos ipsam adipisci, vero, voluptate ducimus. Possimus porro nostrum eius unde corrupti rerum eum est voluptates atque dolorum perspiciatis sunt eaque facere beatae voluptate omnis praesentium tempore blanditiis aspernatur, sapiente incidunt. Assumenda sint adipisci, non corporis accusamus voluptatibus debitis asperiores? Quia ut magnam consequuntur voluptas, rem assumenda eaque molestias accusantium obcaecati non nemo cum. Perferendis illo tenetur odio neque, vel obcaecati! Sit ab doloribus eligendi excepturi illum, pariatur magnam beatae ex suscipit totam dolores doloremque sint porro a? Quaerat culpa, animi, in eius a similique earum ratione atque, debitis cumque quo doloremque accusamus perferendis excepturi corrupti odit quae consequatur alias? Nulla, voluptatibus minima nam nemo numquam eaque itaque mollitia quos, perspiciatis voluptatum saepe ratione natus pariatur praesentium esse enim excepturi tempore tenetur dicta. Sequi magni excepturi illo, itaque dolores totam, ipsa, minima iste veritatis iure nihil harum? Quas cum molestias commodi nesciunt odit in aliquid. Consequuntur, repudiandae quae culpa, officia voluptates, laudantium ipsam reiciendis magni impedit fuga asperiores vitae voluptate voluptas quo. Quos quidem, accusantium vel laborum provident est perferendis fugiat iure consequatur nihil reiciendis, sequi excepturi esse commodi, dolore fuga voluptatum explicabo assumenda tenetur pariatur? Minima sunt facere officiis, maxime itaque laborum natus. Earum iusto blanditiis laudantium adipisci ratione iure nihil officiis suscipit magni, libero consectetur, repellat omnis corrupti! Tenetur sapiente a delectus assumenda nulla explicabo. Rerum quam adipisci dolorem nulla commodi fugiat obcaecati saepe iure? Ullam ab, eaque explicabo voluptatum aperiam animi doloribus. Eum, asperiores. Ab ullam officia eveniet, harum minima iure, velit debitis, doloremque quia soluta tempora qui illum reprehenderit vitae magni corrupti dolorum labore architecto nam nihil. Minus laborum dolorum nostrum nulla provident molestias similique exercitationem, voluptas vero ipsam, eius, id eligendi hic magnam explicabo dignissimos nisi? Similique consectetur nostrum delectus asperiores. Quis, culpa suscipit, magni, inventore ducimus id obcaecati voluptates deleniti molestias dolore consequatur! Fugit, veniam nemo officia consequatur sed beatae autem quae? In quos sed doloribus reiciendis, ab impedit numquam. Maiores ullam nesciunt fuga adipisci veniam, natus exercitationem corrupti optio delectus similique nostrum. Ipsa animi esse, ipsum non sapiente neque soluta ad minus veniam ullam vitae dicta pariatur? Consequatur velit dolor vero fugit deleniti iusto harum? Atque accusamus quos ea perferendis ducimus praesentium eos numquam deserunt. Dolor quisquam, minus ducimus maxime quod optio mollitia quo ipsa vitae quos nesciunt deserunt blanditiis! Minima quas dolorem tempore dolorum reprehenderit atque tempora eveniet vel explicabo magni inventore perferendis facilis doloribus exercitationem nobis architecto aliquid, suscipit qui quia illum doloremque. Mollitia fuga vero veniam quae eligendi necessitatibus commodi distinctio. Tenetur consectetur, quia voluptatem laboriosam omnis ratione blanditiis excepturi non officiis, dignissimos repellat officia delectus rerum modi obcaecati dolore nulla. Veniam quae dignissimos inventore voluptatum quam. Ratione adipisci molestiae voluptatibus eum fugiat doloremque veritatis ducimus esse nesciunt ipsum iste repudiandae similique odio recusandae atque unde nisi, ut voluptate beatae incidunt rerum cupiditate nam vel necessitatibus. Vitae illo sit delectus iusto aut quam! Exercitationem dolorum, non explicabo vitae corporis hic aspernatur? Cupiditate iure non, aut alias quod sed ipsam? Repudiandae sapiente excepturi quis laudantium nesciunt tenetur officia sequi? Cupiditate, quasi. Quae sed velit perferendis nulla, inventore quam, harum officiis deserunt repudiandae laboriosam, eius dolore doloribus! Laudantium accusantium voluptatibus voluptates necessitatibus possimus provident, sapiente beatae corrupti deleniti similique molestiae quae totam quasi, in itaque rem, magni modi? Repudiandae voluptatibus in delectus temporibus. Dolores non dicta consectetur, facere corrupti deleniti quaerat id laboriosam natus a nam? Animi rem, consectetur doloremque at nostrum, saepe perferendis sed, a natus assumenda voluptate! Sit doloribus, nihil aliquid eveniet esse dolores sapiente nulla officiis enim natus rerum distinctio et quibusdam velit nam perferendis cumque consequatur dolor aspernatur excepturi sequi fuga placeat? Inventore quidem fuga autem modi aperiam. Autem, nihil, assumenda voluptas unde quibusdam numquam accusantium similique libero, voluptates rerum ut rem. Totam architecto fuga veniam quaerat atque, ab quis culpa minima, ullam quo quia dolorum mollitia aspernatur cum, rerum vero in soluta placeat velit! Pariatur iste, repudiandae obcaecati fuga libero saepe numquam amet assumenda adipisci in voluptatem aperiam, explicabo totam voluptas, nesciunt asperiores rerum illo earum. Aperiam illum facilis dolor eius beatae nesciunt fugiat? Tempora accusamus pariatur dolore ipsam, ratione, cupiditate aliquid error consequuntur veniam amet rerum quos. Velit voluptas fuga sunt odit, maiores sit nostrum ab! Vero dolorum ducimus molestias? Expedita in officiis hic aspernatur ea exercitationem quod a veritatis et alias sint vero odio veniam laboriosam iure, amet dignissimos culpa reprehenderit error ullam numquam repellendus explicabo quaerat! Aut labore architecto soluta quae? Non ipsum totam pariatur dolorem omnis eligendi enim, minus odio?
+    </p>
+    <br>
+    
+    <!-- Etiquetas de texto -->
+    <h1> Encabezado 1 </h1>
+    <p> Texto 1</p>
+    <br>
+    <br>
+    <h2> Encabezado 2 </h2>
+    <p> Texto 2</p>
+    <br>
+    <br>
+    <h3> Encabezado 3 </h3>
+    <p> Texto 3</p>
+    <br>
+    <br>
+    <h4> Encabezado 4 </h4>
+    <p> Texto 4</p>
+    <br>
+    <br>
+    <h5> Encabezado 5 </h5>
+    <p> Texto 5</p>
+    <h6> Encabezado 6 </h6>
+    <p> Texto 6</p>
+
+    <br>
+    <br>
+    <br>
+    
+    <a href="https://www.google.com.ar"> Vamos a Google </a>
+
+    <!-- Pie de pagina - TAG para los link internos -->
+    <footer id="pie"><h2>Pie de pagina</h2></footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+p {
+    color: blue;
+}
+
+/*Selectores: son las propiedades que se aplican a todo el doc*/
+
+/* 1.- id */
+#titulo1{
+    color:rgb(169,217,73);
+}
+
+/*2.- Clases */
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.green{
+    color: green;
+}
+
+.bordeRedondeado{
+    border-radius: 25px;
+}
+
+.imgChica{
+    width: 10%;
+    height: 20%;
+}
+
+/*3.- Etiquetas */
+
+li{
+    color: blue;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+*{
+    margin: 3px;
+    padding: 5px;
+    box-sizing: border-box;
+} 
+
+/*BOX*/
+
+*{
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: flex;
+    background-color: brown;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+}
+
+.tarjeta{
+    width: 30%;
+    height: 80%;
+    background-color: rgb(19, 180, 75);
+    border: 5px solid white;
+    border-radius: 15px;
+    padding: 15px;
+    margin: auto;
+}
+
+
+/*
+
+#cajita{
+    background-color: blue;
+}
+*/
+
+.tarjeta2{
+    width: 350px;
+    height: 250px;
+    background-color: rgb(19, 180, 75);
+    border: 5px solid white;
+    border-radius: 15px;
+    padding: 15px;
+    margin: auto;
+}
